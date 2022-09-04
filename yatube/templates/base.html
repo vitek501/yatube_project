@@ -22,10 +22,13 @@
     </header>
     <main>
       {% block content %}
+        Контент не подвезли :(
       {% endblock %}
     </main>
     <footer class="border-top text-center py-3">
-      {% include 'includes/footer.html' %} 
+      {% block footer %}
+        {% include 'includes/footer.html' %} 
+      {% endblock %}
     </footer>
   </body>
 </html>
